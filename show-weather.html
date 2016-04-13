@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather API call using openweathermap.org by Ramin Etemadipour</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--adding required stylesheets-->
+    <link rel="stylesheet" href="./asset/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./asset/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./asset/css/stylesheet.css">
+    <!--adding required libraries-->
+    <script src="./asset/js/jquery-1.12.2.min.js"></script>
+    <script src="./asset/bootstrap/js/bootstrap.min.js"></script>
+    <!--if your visitor still insist on using IE browsers!!-->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--our custom js-->
+    <script src="./asset/js/custom.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md6 col-xs-6 col-md-offset-3">
+        <form class="boxed-form">
+            <div class="form-group has-warning has-feedback">
+                <label class="control-label" for="city">City:</label>
+                <input type="text" class="form-control" id="city" placeholder="Enter your desired city" />
+                <button type="submit" id="getweather" class="btn btn-default">Get weather!</button>
+                <div id="result"></div>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
